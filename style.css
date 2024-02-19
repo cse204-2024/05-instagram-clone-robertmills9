@@ -57,20 +57,30 @@ main {
   max-width: 614px; /* Max width for posts to match IG */
   background: #fff;
   border: 1px solid #dbdbdb;
-  border-radius: 3px;
+  border-radius: 8px;
+  overflow: hidden; 
   margin-bottom: 20px;
   font-size: 14px; /* Match font size to body */
 }
 
-.post-header, .post-footer {
+.post-header {
   padding: 10px;
   display: flex;
   align-items: center; /* Align items in the header/footer */
 }
-
+.post-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Spread out content */
+}
 .post-image {
   width: 100%;
   display: block; /* Remove any space below the image */
+}
+
+.post-likes, .post-caption {
+  font-weight: bold;
+  margin: 5px 0; /* Give some space around the text */
 }
 
 .icon {
@@ -81,7 +91,10 @@ main {
 .sidebar {
   width: 293px; /* Fixed width for sidebar to match IG */
   margin-left: 20px; /* Spacing between post and sidebar */
+  display: flex;
+  flex-direction: column;
 }
+
 
 .profile-info, .story, .suggestion {
   display: flex;
@@ -104,20 +117,30 @@ main {
   border: 2px solid red; /* Style for new stories */
 }
 
+
 .suggestions {
   background: #fafafa;
   border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background-color: #fff;
   padding: 10px;
-  margin-top: 20px; /* Spacing above suggestions */
+  margin-top: 20px; /* Space from the elements above */
 }
 
 .suggestion-header {
   display: flex;
   justify-content: space-between;
+  padding: 8px;
   margin-bottom: 10px;
-  font-weight: bold; /* Bold font for headers */
+  font-weight: bold; 
+  font-size: 12px; /* Adjust font size for suggestion header */
 }
 
+.suggestion-header a {
+  text-decoration: none;
+  color: #0095f6;
+  font-weight: 600; /* Bold for the 'See All' link */
+}
 .suggestion button {
   background: #0095f6;
   color: #fff;
