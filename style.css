@@ -18,8 +18,8 @@ header {
   align-items: center;
   background-color: #fff;
   border-bottom: 1px solid #dbdbdb;
-  padding: 10px 20px;
-  position: fixed;
+  padding: 14px 8px;
+  
   top: 0;
   width: 100%;
   z-index: 10;
