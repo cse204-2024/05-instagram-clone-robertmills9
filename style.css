@@ -1,101 +1,144 @@
 /* Global styles and resets */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #dbdbdb;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-  }
-  
-  header input[type="search"] {
-    background-color: #fafafa;
-    border: 1px solid #dbdbdb;
-    padding: 3px 10px;
-    border-radius: 3px;
-  }
-  
-  header input[type="search"]:focus {
-    background-color: #eeeeee;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, button, input {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  height: 30px; /* Adjust size to match the screenshot */
+}
+
+.search-container input[type="search"] {
+  padding: 3px 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.search-container input[type="search"]:focus {
+  background-color: #fafafa;
+}
+
+nav img {
+  margin-left: 20px; /* Adjust spacing to match the screenshot */
+}
+
+/* Main content and posts */
+main {
+  display: flex;
+  margin-top: 60px; /* Offset for the fixed header */
+  padding: 20px;
+}
+
+.post {
+  width: 60%;
+  margin-right: 20px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.post-header, .post-footer {
+  padding: 10px;
+}
+
+.post-image {
+  width: 100%;
+  display: block; /* Remove any space below the image */
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 35%;
+}
+
+.profile-info, .story, .suggestion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.stories {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.stories .story-avatar {
+  border: 2px solid red; /* Add a border to indicate new stories */
+}
+
+.suggestions {
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+}
+
+.suggestion-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.suggestion button {
+  background: #0095f6;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sidebar-footer {
+  padding: 10px 0;
+}
+
+.sidebar-footer nav a {
+  color: #00376b;
+  margin-right: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 760px) {
   main {
-    padding-top: 60px; /* Give space for the fixed header */
-    max-width: 935px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  article {
-    width: 60%;
-    margin-right: 20px;
-  }
-  
-  aside {
-    width: 35%;
-  }
-  
-  /* Add styles for .profile, .stories, .suggestions, and footer */
-  /* Add styles for responsiveness using media queries */
-  
-  /* Example for responsive sidebar */
-  @media (max-width: 760px) {
-    aside {
-      display: none;
-    }
-    article {
-      width: 100%;
-      margin-right: 0;
-    }
-  }
-  
-  /* ... Other styles ... */
-
-  
-
-  .profile img, .stories img {
-    border-radius: 50%; /* Create the circle effect */
-    /* Add more styling specific to the size and border as seen in the screenshots */
-  }
-  
-  .stories {
-    overflow-x: auto;
-    white-space: nowrap;
-    /* Add styling for the stories container */
-  }
-  
-  .story {
-    display: inline-block;
-    /* Add styling for each story */
-  }
-
-  @media (max-width: 768px) {
-    main {
       flex-direction: column;
-      align-items: center;
-    }
-  
-    article, aside {
-      width: 100%;
-    }
-  
-    aside {
-      display: none; /* Hide the sidebar on tablet sizes */
-    }
   }
-  
+
+  .post, .sidebar {
+      width: 100%;
+  }
+
+  .sidebar {
+      display: none;
+  }
+}
+
+/* Other responsive adjustments as necessary for widths > 375

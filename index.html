@@ -1,61 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instagram Clone</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <img src="logotype.png" alt="Instagram Logo">
-    <input type="search" placeholder="&#x1F50D; Search">
-    <nav>
-      <img src="compass.png" alt="Explore">
-      <img src="heart.png" alt="Likes">
-      <img src="user.png" alt="Profile">
-    </nav>
-  </header>
-
-  <main>
-    <article>
-      <header>
-        <img src="user.png" alt="User">
-        <span>someperson</span>
-      </header>
-      <img src="path-to-post-image.jpg" alt="Post Image">
-      <footer>
-        <img src="heart.png" alt="Like">
-        <img src="speech_bubble.png" alt="Comment">
-        <img src="upload.png" alt="Share">
-        <span>11 likes</span>
-        <div>someperson My cat #catsoffakeinstagram</div>
-      </footer>
-    </article>
-
-    <!-- Repeat the article block for the second post -->
-
-    <aside>
-      <section class="profile">
-        <img src="user.png" alt="Profile">
-        <div>
-          <span>some.username</span>
-          <span>Some Name</span>
+    <header>
+        <img src="logotype.png" alt="Instagram Logo" class="logo">
+        <div class="search-container">
+            <input type="search" placeholder="&#x1F50D; Search">
         </div>
-      </section>
+        <nav>
+            <img src="compass.png" alt="Explore">
+            <img src="heart.png" alt="Likes">
+            <img src="user.png" alt="Profile">
+        </nav>
+    </header>
 
-      <section class="stories">
-        <!-- Stories will go here -->
-      </section>
+    <main>
+        <!-- Post 1 -->
+        <article class="post">
+            <header class="post-header">
+                <img src="user.png" alt="User" class="avatar">
+                <span>someperson</span>
+            </header>
+            <img src="your-cat-image.jpg" alt="Cat" class="post-image">
+            <footer class="post-footer">
+                <img src="heart.png" alt="Like" class="icon">
+                <img src="speech_bubble.png" alt="Comment" class="icon">
+                <img src="bookmark.png" alt="Save" class="icon">
+                <div class="likes">11 likes</div>
+                <div class="caption">someperson My cat #catsoffakeinstagram</div>
+                <!-- Comments would go here -->
+            </footer>
+        </article>
+        <!-- Repeat for Post 2 -->
 
-      <section class="suggestions">
-        <!-- Suggestions will go here -->
-      </section>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Profile Info -->
+            <section class="profile-info">
+                <img src="user.png" alt="Profile" class="avatar">
+                <div>
+                    <strong>some.username</strong>
+                    <span>Some Name</span>
+                </div>
+            </section>
+            <!-- Stories-->
+<section class="stories">
+  <div class="story" id="story1">
+  <img src="user.png" alt="User Story" class="story-avatar">
+  <span>foobar1</span>
+  </div>
+  <div class="story" id="story2">
+  <img src="user.png" alt="User Story" class="story-avatar">
+  <span>foobar2</span>
+  </div>
+  <!-- Add more stories as needed -->
+  </section>
+          <!-- Suggestions -->
+          <section class="suggestions">
+            <div class="suggestion-header">
+                <span>Suggestions For You</span>
+                <a href="#">See All</a>
+            </div>
+            <div class="suggestion" id="suggestion1">
+                <img src="user.png" alt="Suggested User" class="avatar">
+                <div class="suggestion-info">
+                    <span>St. Louis Blues</span>
+                    <span>Popular</span>
+                </div>
+                <button>Follow</button>
+            </div>
+            <!-- Repeat for other suggestions -->
+        </section>
 
-      <footer>
-        <!-- Footer links will go here -->
-      </footer>
+        <!-- Footer Links -->
+        <footer class="sidebar-footer">
+            <nav>
+                <a href="#">About Us</a>
+                <a href="#">Support</a>
+                <a href="#">Press</a>
+                <!-- Add more links as needed -->
+            </nav>
+            <span>&copy; 2018 INSTAGRAM</span>
+        </footer>
     </aside>
-  </main>
+</main>
 </body>
 </html>
