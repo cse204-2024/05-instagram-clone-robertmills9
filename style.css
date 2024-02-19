@@ -67,3 +67,35 @@
   /* ... Other styles ... */
 
   
+
+  .profile img, .stories img {
+    border-radius: 50%; /* Create the circle effect */
+    /* Add more styling specific to the size and border as seen in the screenshots */
+  }
+  
+  .stories {
+    overflow-x: auto;
+    white-space: nowrap;
+    /* Add styling for the stories container */
+  }
+  
+  .story {
+    display: inline-block;
+    /* Add styling for each story */
+  }
+
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    article, aside {
+      width: 100%;
+    }
+  
+    aside {
+      display: none; /* Hide the sidebar on tablet sizes */
+    }
+  }
+  
