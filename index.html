@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Clone</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <!-- Header content: logo, search box, icons -->
-    </header>
-    <main>
-        <section class="posts">
-            <!-- 2 image posts -->
-        </section>
-        <aside class="sidebar">
-            <!-- Profile info, stories, suggestions, footer links -->
-        </aside>
-    </main>
-    <footer>
-        <!-- Footer content -->
-    </footer>
+  <header>
+    <img src="logotype.png" alt="Instagram Logo">
+    <input type="search" placeholder="&#x1F50D; Search">
+    <nav>
+      <img src="compass.png" alt="Explore">
+      <img src="heart.png" alt="Likes">
+      <img src="user.png" alt="Profile">
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <img src="user.png" alt="User">
+        <span>someperson</span>
+      </header>
+      <img src="path-to-post-image.jpg" alt="Post Image">
+      <footer>
+        <img src="heart.png" alt="Like">
+        <img src="speech_bubble.png" alt="Comment">
+        <img src="upload.png" alt="Share">
+        <span>11 likes</span>
+        <div>someperson My cat #catsoffakeinstagram</div>
+      </footer>
+    </article>
+
+    <!-- Repeat the article block for the second post -->
+
+    <aside>
+      <section class="profile">
+        <img src="user.png" alt="Profile">
+        <div>
+          <span>some.username</span>
+          <span>Some Name</span>
+        </div>
+      </section>
+
+      <section class="stories">
+        <!-- Stories will go here -->
+      </section>
+
+      <section class="suggestions">
+        <!-- Suggestions will go here -->
+      </section>
+
+      <footer>
+        <!-- Footer links will go here -->
+      </footer>
+    </aside>
+  </main>
 </body>
 </html>
