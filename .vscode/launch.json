@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "url": "https://cse204-2024.github.io/05-instagram-clone-robertmills9/",
             "webRoot": "${workspaceFolder}"
         }
     ]
