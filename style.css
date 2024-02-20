@@ -299,7 +299,13 @@ main {
     align-items: center; /* Center main content on smaller screens */
   }
 }
-
+footer {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #dbdbdb;
+  margin-top: 20px; /* Space from the content above */
+}
 /* Other responsive adjustments as necessary for widths > 375px */
 @media (max-width: 375px) {
   header, .post, .sidebar {
