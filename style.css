@@ -51,36 +51,75 @@ main {
   padding: 20px;
   justify-content: center; /* Center main content */
 }
-
 .post {
   width: 100%;
   max-width: 614px; /* Max width for posts to match IG */
   background: #fff;
   border: 1px solid #dbdbdb;
   border-radius: 8px;
-  overflow: hidden; 
+  overflow: hidden;
   margin-bottom: 20px;
-  font-size: 14px; /* Match font size to body */
+  font-family: Arial, sans-serif; /* Use a clean, IG-like font */
+  color: #262626; /* Instagram's primary text color */
+}
+
+.post-header, .post-footer {
+  padding: 10px;
 }
 
 .post-header {
-  padding: 10px;
-  display: flex;
-  align-items: center; /* Align items in the header/footer */
-}
-.post-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Spread out content */
-}
-.post-image {
-  width: 100%;
-  display: block; /* Remove any space below the image */
 }
 
-.post-likes, .post-caption {
+.avatar {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.username {
   font-weight: bold;
-  margin: 5px 0; /* Give some space around the text */
+  color: #262626;
+}
+
+.post-image {
+  width: 100%;
+  display: block;
+}
+
+.interactions {
+  display: flex;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.likes, .caption, .comment {
+  margin-top: 8px;
+}
+
+.likes {
+  font-weight: bold;
+}
+
+.caption {
+  color: #262626;
+}
+
+.comments-section {
+  margin-top: 8px;
+}
+
+.comment .username {
+  font-weight: bold;
+}
+
+.comment {
+  color: #262626;
+  margin-bottom: 4px;
 }
 
 .icon {
