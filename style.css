@@ -68,7 +68,7 @@ main {
 }
 
 .post-header {
-  display: flex;
+  display: flow;
   align-items: center;
 }
 
