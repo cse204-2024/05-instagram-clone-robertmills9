@@ -216,7 +216,7 @@ main {
   background-color: #fff;
   border: 1px solid #dbdbdb;
   border-radius: 4px;
-  padding: 10px;
+  padding: 64px;
   margin-top: 20px; /* Space from the elements above */
 }
 
@@ -238,7 +238,7 @@ main {
 }
 
 .suggestion {
-  display: flex;
+  display: ruby;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
