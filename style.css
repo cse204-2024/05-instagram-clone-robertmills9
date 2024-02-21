@@ -1,4 +1,3 @@
-/* Global styles and resets */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,11 +6,11 @@
 
 body, button, input {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  font-size: 14px; /* Adjust font size as needed */
-  color: #262626; /* Default text color, adjust as needed */
+  font-size: 14px; 
+  color: #262626; 
 }
 
-/* Header styles */
+/* Header  */
 header {
   display: flex;
   justify-content: space-between;
@@ -26,14 +25,14 @@ header {
 }
 
 .logo {
-  height: 30px; /* Adjust size to match the screenshot */
+  height: 30px; 
 }
 
 .search-container input[type="search"] {
   padding: 3px 10px;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
-  font-size: 14px; /* Match font size to body */
+  font-size: 14px; 
 }
 
 .search-container input[type="search"]:focus {
@@ -41,27 +40,26 @@ header {
 }
 
 nav img {
-  margin-left: 20px; /* Adjust spacing to match the screenshot */
+  margin-left: 20px; 
 }
 
 /* Main content and posts */
 main {
   display: flex;
-  margin-top: 60px; /* Offset for the fixed header */
+  margin-top: 60px;
   padding: 20px;
-  justify-content: center; /* Center main content */
+  justify-content: center; 
 }
 .post {
   width: 100%;
-  max-width: 614px; /* Max width for posts to match IG */
+  max-width: 614px; 
   background: #fff;
   border: 1px solid #dbdbdb;
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 20px;
-  font-family: Arial, sans-serif; /* Use a clean, IG-like font */
-  color: #262626; /* Instagram's primary text color */
-}
+  font-family: Arial, sans-serif; 
+  color: #262626; 
 
 .post-header, .post-footer {
   padding: 10px;
@@ -126,14 +124,14 @@ main {
 .icon {
   margin-right: 10px;
 }
-/* General styles for sidebar */
+/* styles for sidebar */
 .sidebar {
-  width: 293px; /* Fixed width for sidebar to match IG */
-  margin-left: 20px; /* Spacing between post and sidebar */
+  width: 293px; 
+  margin-left: 20px;
   display: flow;
   flex-direction: column;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Instagram's primary font */
-  justify-content: space-between; /* This will push the footer to the bottom */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  justify-content: space-between; 
   height: calc(100vh - 20px); /* Full height of the viewport minus some margin */
   padding: 20px 0;
 }
@@ -147,7 +145,7 @@ main {
 
 .profile-avatar {
   border-radius: 50%;
-  width: 56px; /* Updated size for the avatar */
+  width: 56px; /* updated size for the avatar */
   height: 56px;
   margin-right: 10px;
 }
@@ -157,7 +155,7 @@ main {
 }
 
 .user-info .full-name {
-  color: #8e8e8e; /* Instagram's secondary text color */
+  color: #8e8e8e; 
 }
 
 /* Stories section styles */
@@ -176,7 +174,7 @@ main {
 
 .watch-all {
   font-size: 12px;
-  color: #0095f6; /* Instagram's link color */
+  color: #0095f6; 
   text-decoration: none;
 }
 
@@ -189,14 +187,14 @@ main {
 
 .stories .story-avatar {
   border-radius: 50%;
-  border: 2px solid #ed4956; /* Instagram's new story pink border */
+  border: 2px solid #ed4956; 
   width: 66px;
   height: 66px;
   margin-bottom: 4px;
 }
 
 .stories .new-story {
-  padding: 2px; /* Optional: for new stories indicator */
+  padding: 2px; 
 }
 
 .stories .story-username {
@@ -217,7 +215,7 @@ main {
   border: 1px solid #dbdbdb;
   border-radius: 4px;
   padding: 64px;
-  margin-top: 20px; /* Space from the elements above */
+  margin-top: 20px; 
 }
 
 .suggestion-header {
@@ -296,7 +294,7 @@ main {
   main {
     padding: 20px;
     flex-direction: column;
-    align-items: center; /* Center main content on smaller screens */
+    align-items: center; 
   }
 }
 footer {
@@ -304,35 +302,33 @@ footer {
   padding: 10px 0;
   text-align: left;
   border-top: 1px solid #dbdbdb;
-  margin-top: 20px; /* Space from the content above */
+  margin-top: 20px; 
 }
-/* Other responsive adjustments as necessary for widths > 375px */
 @media (max-width: 375px) {
   header, .post, .sidebar {
-    padding: 0 10px; /* Adjust padding on smaller screens */
+    padding: 0 10px;
   }
 
   .search-container input[type="search"] {
     flex-grow: 1
-    /* Expand search input on smaller screens */
   }
 
   .post-header, .post-footer, .profile-info, .story, .suggestion {
-    padding: 10px 5px; /* Adjust padding for smaller screens */
+    padding: 10px 5px;
   }
 
   .icon, .avatar {
-    width: 20px; /* Adjust size of icons and avatars on smaller screens */
+    width: 20px; 
     height: 20px;
   }
 
   .stories .story-avatar {
-    width: 50px; /* Adjust story avatar size */
+    width: 50px;
     height: 50px;
-    margin-right: 5px; /* Adjust spacing between story avatars */
+    margin-right: 5px;
   }
 
   .suggestion button {
-    padding: 5px; /* Adjust button padding on smaller screens */
+    padding: 5px; 
   }
-}
+}}
