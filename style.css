@@ -130,7 +130,7 @@ main {
 .sidebar {
   width: 293px; /* Fixed width for sidebar to match IG */
   margin-left: 20px; /* Spacing between post and sidebar */
-  display: flex;
+  display: flow;
   flex-direction: column;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Instagram's primary font */
   justify-content: space-between; /* This will push the footer to the bottom */
@@ -302,7 +302,7 @@ main {
 footer {
   width: 100%;
   padding: 10px 0;
-  text-align: center;
+  text-align: left;
   border-top: 1px solid #dbdbdb;
   margin-top: 20px; /* Space from the content above */
 }
